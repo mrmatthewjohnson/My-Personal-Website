@@ -1,0 +1,66 @@
+<!--
+    Project: My Personal Website
+    Filename: index.html
+    Author: Matthew Johnson 
+    Date: 3/24/2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Johnson | Web Design</title>
+    <!-- Using Tailwind CSS for fast, beautiful styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold text-blue-600">MJ.</div>
+        <div class="space-x-6">
+            <a href="#services" class="hover:text-blue-600">Services</a>
+            <a href="#work" class="hover:text-blue-600">Work</a>
+            <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-4xl mx-auto px-6 py-24 text-center">
+        <h1 class="text-5xl font-extrabold mb-6">I build fast, professional websites for businesses.</h1>
+        <p class="text-xl text-gray-600 mb-10">Hi, I'm Matthew. I'm an independent web developer specializing in custom sites that help you get more customers.</p>
+        <a href="#contact" class="px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-700">Let's talk about your project</a>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-20 border-t border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">What I Do</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="p-6 bg-gray-50 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3">Custom Web Design</h3>
+                    <p class="text-gray-600">Mobile-friendly, lightning-fast websites built to represent your brand perfectly and convert visitors into clients.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3">Hosting & Management</h3>
+                    <p class="text-gray-600">For a flat monthly fee, I handle your hosting, security updates, and content changes so you can focus on running your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-24 text-center">
+        <h2 class="text-3xl font-bold mb-6">Ready to upgrade your web presence?</h2>
+        <p class="text-lg text-gray-600 mb-8">Currently accepting new projects. Send me an email and let's discuss what you need.</p>
+        <!-- Replace with your actual email -->
+        <a href="mailto:hello@matthewjohnson.com" class="px-8 py-4 border-2 border-blue-600 text-blue-600 text-lg font-semibold rounded-lg hover:bg-blue-50">Email Me: hello@matthewjohnson.com</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8 text-center">
+        <p>&copy; 2026 Matthew Johnson Web Design. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -9,105 +9,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Johnson | Web Design</title>
-    <!-- Using Tailwind CSS for fast, beautiful styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Matthew Johnson | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-
-    <!-- Navigation -->
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="text-2xl font-bold text-blue-600">MJ.</div>
-        <div class="space-x-6">
-            <a href="#about" class="hover:text-blue-600">About</a>
-            <a href="#services" class="hover:text-blue-600">Services</a>
-            <a href="#work" class="hover:text-blue-600">Work</a>
-            <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Hire Me</a>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Matthew Johnson</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hi, I'm Matthew Johnson</h1>
+            <p>Student, Leader, and Aspiring Web Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="max-w-4xl mx-auto px-6 py-24 text-center">
-        <h1 class="text-5xl font-extrabold mb-6">I build fast, professional websites for businesses.</h1>
-        <p class="text-xl text-gray-600 mb-10">Hi, I'm Matthew. I'm an independent web developer specializing in custom sites that help you get more customers.</p>
-        <a href="#contact" class="px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-700">Let's talk about your project</a>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="max-w-4xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-10 text-gray-700 leading-relaxed space-y-5">
-            <p>
-                Hi, I'm <strong>Matthew Johnson</strong> — a web developer based in Pensacola, FL. I take pride in building clean, professional websites that help businesses and individuals put their best foot forward online.
-            </p>
-            <p>
-                Before focusing on web development, I worked at <strong>Arby's</strong> where I was promoted to <strong>manager at age 18</strong>. That experience taught me accountability, leadership, and how to deliver results under pressure — qualities I bring to every project I take on.
-            </p>
-            <p>
-                I currently attend <strong>Pensacola Christian College</strong>, where I continue to sharpen my skills and grow both personally and professionally. My faith and strong work ethic are at the core of everything I do.
-            </p>
-            <p>
-                Whether you're a small business looking for your first website or an individual who needs a polished online presence, I'm here to help you get there.
-            </p>
-        </div>
-    </section>
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hello! I am currently a dedicated student at <strong>Pensacola Christian College</strong>, where I am expanding my knowledge and preparing for my future career. I am passionate about learning, building new things, and taking on challenges.</p>
+                <p>I believe in hard work, leadership, and continuous growth. When I'm not studying, I am working on expanding my technical skills and building out my portfolio.</p>
+            </div>
+        </section>
 
+        <section id="experience" class="container">
+            <h2>Experience</h2>
+            <div class="experience-card arbys-theme">
+                <h3>Restaurant Manager</h3>
+                <h4>Arby's</h4>
+                <p class="date">Achieved Management at Age 18</p>
+                <p>Demonstrated strong leadership and work ethic by being promoted to a management position at just 18 years old. Responsible for overseeing daily operations, leading team members in high-pressure environments, ensuring customer satisfaction, and managing inventory and store efficiency.</p>
+            </div>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services" class="bg-white py-20 border-t border-b border-gray-200">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">What I Do</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="p-6 bg-gray-50 rounded-xl">
-                    <h3 class="text-xl font-bold mb-3">Custom Web Design</h3>
-                    <p class="text-gray-600">Mobile-friendly, lightning-fast websites built to represent your brand perfectly and convert visitors into clients.</p>
+        <section id="projects" class="container">
+            <h2>My Projects</h2>
+            <p class="subtitle">Here are some of the websites and applications I have created.</p>
+            <div class="project-grid">
+                <!-- Project 1 Placeholder -->
+                <div class="project-card">
+                    <h3>Project Name 1</h3>
+                    <p>A brief description of the website or application you built and what technologies you used.</p>
+                    <a href="#" class="project-link" target="_blank">View Live Site</a>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-xl">
-                    <h3 class="text-xl font-bold mb-3">Hosting & Management</h3>
-                    <p class="text-gray-600">For a flat monthly fee, I handle your hosting, security updates, and content changes so you can focus on running your business.</p>
+                <!-- Project 2 Placeholder -->
+                <div class="project-card">
+                    <h3>Project Name 2</h3>
+                    <p>A brief description of the website or application you built and what technologies you used.</p>
+                    <a href="#" class="project-link" target="_blank">View Live Site</a>
+                </div>
+                <!-- Project 3 Placeholder -->
+                <div class="project-card">
+                    <h3>Project Name 3</h3>
+                    <p>A brief description of the website or application you built and what technologies you used.</p>
+                    <a href="#" class="project-link" target="_blank">View Live Site</a>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>Feel free to reach out to me for opportunities or just to say hi!</p>
+            <div class="social-links">
+                <!-- Replace the '#' with your actual profile URLs -->
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Twitter / X</a>
+                <a href="mailto:your.email@example.com">Email Me</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Matthew Johnson. All rights reserved.</p>
         </div>
-    </section>
-
-    <!-- Work / Portfolio Section -->
-    <section id="work" class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-4 text-center">My Work</h2>
-        <p class="text-center text-gray-500 mb-12">Here are some of the sites I've built. Live links will be added as projects launch.</p>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col">
-                <h3 class="text-lg font-bold mb-2">Project One</h3>
-                <p class="text-gray-600 text-sm flex-grow">A professional business website built for a local client. Clean layout, mobile-friendly, and optimized for search engines.</p>
-                <!-- Link will be added when live -->
-                <span class="mt-4 inline-block text-sm text-gray-400 italic">Link coming soon</span>
-            </div>
-            <div class="bg-white rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col">
-                <h3 class="text-lg font-bold mb-2">Project Two</h3>
-                <p class="text-gray-600 text-sm flex-grow">A portfolio site designed to showcase creative work with a bold, modern aesthetic and fast load times.</p>
-                <!-- Link will be added when live -->
-                <span class="mt-4 inline-block text-sm text-gray-400 italic">Link coming soon</span>
-            </div>
-            <div class="bg-white rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col">
-                <h3 class="text-lg font-bold mb-2">Project Three</h3>
-                <p class="text-gray-600 text-sm flex-grow">A service-based business site with a contact form, service listings, and a clean, trustworthy design.</p>
-                <!-- Link will be added when live -->
-                <span class="mt-4 inline-block text-sm text-gray-400 italic">Link coming soon</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="max-w-4xl mx-auto px-6 py-24 text-center">
-        <h2 class="text-3xl font-bold mb-6">Ready to upgrade your web presence?</h2>
-        <p class="text-lg text-gray-600 mb-8">Currently accepting new projects. Send me an email and let's discuss what you need.</p>
-        <!-- Replace with your actual email -->
-        <a href="mailto:hello@matthewjohnson.com" class="px-8 py-4 border-2 border-blue-600 text-blue-600 text-lg font-semibold rounded-lg hover:bg-blue-50">Email Me: hello@matthewjohnson.com</a>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400 py-8 text-center">
-        <p>&copy; 2026 Matthew Johnson Web Design. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

@@ -74,6 +74,17 @@ nav {
     padding: 0 2rem;
 }
 
+/* Add this to your style.css under the Hero section */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Makes it a perfect circle */
+    object-fit: cover; /* Ensures the picture isn't stretched */
+    border: 5px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
